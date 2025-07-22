@@ -20,7 +20,7 @@ Inverse kinematics is a **many-to-one** problem: for a given (x, y), multiple va
 
 ## Known Limitation 
 
-**The neural network was trained on data generated within specific joint limits**  
+> **The neural network was trained on data generated within specific joint limits**  
 > (`q1 ∈ [-π/2, π/2]`, `q2 ∈ [-π/3, π/3]`),  
 > but the model itself was trained **without enforcing those joint constraints** in the loss function or output layer.  
 > As a result, the network is free to extrapolate beyond the valid joint range.
